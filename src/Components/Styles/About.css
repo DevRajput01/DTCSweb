@@ -1,0 +1,181 @@
+/* General resets and styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header Styles */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between logo and content */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background: transparent;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 9999;
+  background-color: #fff; /* add a background for visibility if needed */
+}
+
+.logo img {
+  height: 45px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #facc15;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 24px;
+  background: #facc15;
+  border: none;
+  border-radius: 50px;
+  color: #0d0d0d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.3);
+}
+
+.btn:hover {
+  background: #eab308;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* About Us Section */
+.about-us {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #f3f4f6;
+}
+
+.stat-item {
+  flex: 1 1 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Leadership Team Section */
+.leadership {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.leadership h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  flex: 1 1 250px;
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.team-member p {
+  color: #6b7280;
+  font-size: 1rem;
+}
