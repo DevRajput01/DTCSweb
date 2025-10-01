@@ -14,13 +14,13 @@
 
 /* Logo */
 .logo img {
-  height: 45px;
+  height: 70px;
   width: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 .logo img:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 
 

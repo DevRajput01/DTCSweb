@@ -1,12 +1,13 @@
 import React from "react";
 import "../Styles/Header.css";
+import logo from '../Images/logo2.png';
 
 const Header = () => {
   return (
     <div className="header-container">
       {/* Logo */}
       <div className="logo">
-        <img src="your-logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
 
       {/* Header Section (60%) */}
